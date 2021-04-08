@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+        <style>
+        /** universal selector **/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /** clear fix **/
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 120%;
+            width: 100%;
+            margin: 0 auto;
+            background-color: black;
+            color: white;
+        }
+        header {
+            width: 100%;
+            margin: 0;
+        }
+        header img {
+            max-width: 370px;
+            width: 100%;
+            float: left;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        header h2 {
+            color: #44b5e6;
+            font-size: 300%;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 450px;
+            border-bottom: solid 5px white;
+            text-shadow: 2px 5px 5px white;
+        }
+        section {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 75%;
+        }
+        h4 {
+            font-size: 200%;
+            padding-top: .5em;
+            padding-bottom: 1em;
+        }
+        .videowrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+            margin: 0 auto;
+            border: 6px solid #44b5e6;
+        }
+        .videowrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .caption p {
+            margin: 2em;
+            line-height: 1.5;
+            font-weight: bold;
+            font-size: 100%;
+            padding-bottom: 2em;
+            border-bottom: solid 5px white;
+        }
+        .caption1 p {
+            margin: 2em;
+            line-height: 1.5;
+            font-weight: bold;
+            font-size: 100%;
+            padding-bottom: 2em;
+        }
+        footer {
+            clear: both;
+            width: 100%;
+            margin: 0;
+            padding: 3em 0;
+            border-top: solid 5px white;
+        }
+        footer p {
+            font-size: 100%;
+            font-weight: bold;
+            font-variant: small-caps;
+            text-align: center;
+            text-shadow: 2px 2px 5px #44b5e6;
+        }
+        /** media queries **/
+        @media only screen and (max-width: 960px) {
+            html {
+                background-image: none;
+            }
+            body {
+                box-shadow: none;
+                border: none;
+                font-size: 90%;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            header h4 {
+                font-size: 200%;
+            }
+            header img {
+            float: none;
+            display: block;
+            margin: 0 auto;
+            padding: 1em 0;
+            max-width: 60%;
+	        }
+            header h2 {
+            font-size: 120%;
+            text-align: center;
+	        }
+        }
+        </style>
+    <title>Bruce Springsteen and the E Street Band</title>
+    <link rel="icon" href="images/logo3.png">
+</head>
+<body>
+    <header>
+        <img src="images/logo4.png">
+        <h2>Bruce Springsteen and the E Street Band</h2>
+    </header>
+    <main>
+        <section>
+            <article id="vid1">
+                <h4>Thunder Road (1975)</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/UDIDawmeeI0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="caption">
+                    <p>Thunder Road performed live in Barcelona (2002) during The Rising Tour. Thunder Road is off of the album Born to Run.</p>
+                </div>
+
+            </article>
+            <article id="vid2">
+                <h4>Dancing in the Dark (1984)</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/129kuDCQtHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="caption">
+                    <p>The official music video for Dancing in the Dark, that first premiered on MTV in 1984. Dancing in the Dark is from the Born in the USA album.</p>
+                </div>
+            </article>
+            <article id="vid3">
+                <h4>Jungleland (1975)</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/lW1RAYYs8RI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="caption">
+                    <p>Performed live at Madison Square Garden in New York City. Part of the Live in New York concert series that invovled ten shows, and took place ten years after the E Street Bands last show all together. Jungleland was first heard on the Born to Run album.</p>
+                </div>
+            </article>
+            <article id="vid4">
+                <h4>Born to Run (1975)</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/IxuThNgl3YA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="caption">
+                    <p>This is the offical Born to Run music video that came out in 1975. This is the title track of the Born to Run album.</p>
+                </div>
+            </article>
+            <article id="vid5">
+                <h4>The River (1980)</h4>
+                <div class="videowrapper">
+                <iframe src="https://www.youtube.com/embed/lc6F47Z6PI4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="caption1">
+                    <p>This performance is from the 1980 Tempe, Arizona show on The River tour. The River is the title track of the album.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script>
+		window.onload = function() {
+			var d = new Date();
+			document.getElementById("copyright").innerHTML = d.getFullYear();
+		}
+    </script>
+    <footer>
+        <p>&copy; 2021 Julia Israel</p>
+    </footer>
+</body>
+</html>
